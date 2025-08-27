@@ -1,0 +1,8 @@
+api_keys:
+  finnhub: d2mb0ppr01qq6fopqjtgd2mb0ppr01qq6fopqju0
+
+settings:
+  default_ticker: "AAPL"
+  history_period: "1y"
+  history_interval: "1d"
+  finnhub_symbol_prefix_for_nse: "NSE:INFY"   # for Indian tickers, e.g., INFY -> NSE:INFY
