@@ -1,8 +1,16 @@
+# config.yaml
+
+
+
 api_keys:
-  finnhub: d2mb0ppr01qq6fopqjtgd2mb0ppr01qq6fopqju0
+  finnhub: "d2mb0ppr01qq6fopqjtgd2mb0ppr01qq6fopqju0"
+  fred: "7676d824a1a5e215f017bd64cd374484"
+  reddit_client_id: io3TSuoz5VXsRel3EMSnXQ
+  reddit_client_secret: 97QQ0pvJ3FWEfDvU_94f1f1xCiN-MA
+  reddit_user_agent: "quant-insights-agent"
 
 settings:
   default_ticker: "AAPL"
   history_period: "1y"
   history_interval: "1d"
-  finnhub_symbol_prefix_for_nse: "NSE:INFY"   # for Indian tickers, e.g., INFY -> NSE:INFY
+  finnhub_symbol_prefix_for_nse: "NSE:INFY"
