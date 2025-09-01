@@ -1,16 +1,49 @@
-# config.yaml
-
-
-
+# This section should contain only secret keys and identifiers.
 api_keys:
   finnhub: "d2mb0ppr01qq6fopqjtgd2mb0ppr01qq6fopqju0"
   fred: "7676d824a1a5e215f017bd64cd374484"
-  reddit_client_id: io3TSuoz5VXsRel3EMSnXQ
-  reddit_client_secret: 97QQ0pvJ3FWEfDvU_94f1f1xCiN-MA
+  
+  # Reddit Credentials
+  reddit_client_id: "io3TSuoz5VXsRel3EMSnXQ"
+  reddit_client_secret: "97QQ0pvJ3FWEfDvU_94f1f1xCiN-MA"
   reddit_user_agent: "quant-insights-agent"
+  
+  # Alpaca Trading Credentials
+  alpaca_key_id: "PKRHG45MO6V5N7THXQC0"
+  alpaca_secret_key: "ZqYbjYlHFcotKxzyQ0b8rzx7ljhsadgxjpfu6fF9"
 
-settings:
-  default_ticker: "AAPL"
-  history_period: "1y"
-  history_interval: "1d"
-  finnhub_symbol_prefix_for_nse: "NSE:INFY"
+  # LLM API Keys
+  groq: "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"
+  gemini: "AIzaSyCeVnHp4ox358bg989H4MXqQ8dO6VWSMw0"
+
+# ==================================
+#      THIRD-PARTY API CONFIGS
+# ==================================
+# This section holds non-secret configuration for external APIs.
+rapidapi:
+  key: "870367fba8msh5d20737dace16dep1cedecjsn8b922316f748"
+  hosts: 
+    alphavantage: "alpha-vantage.p.rapidapi.com"
+    fmp: "financial-modeling-prep.p.rapidapi.com"
+    tradingview: "tradingview-real-time.p.rapidapi.com"
+    investing: "investing-financial-stocks.p.rapidapi.com"
+    indian_stock_exchange: "indian-stock-exchange.p.rapidapi.com"
+
+# ==================================
+#       AGENT & APP SETTINGS
+# ==================================
+# This section controls the behavior of your application's agents.
+agent_settings:
+  paper_trading: true
+  alpaca_base_url: "https://paper-api.alpaca.markets" # Set to "https://api.alpaca.markets" for live
+  
+  # Performance and Rate Limiting
+  cache_ttl: 300
+  groq_rpm: 30
+  gemini_rpm: 15
+# settings:
+#   default_ticker: "AAPL"
+#   history_period: "1y"
+#   history_interval: "1d"
+#   finnhub_symbol_prefix_for_nse: "NSE:INFY"
+  
