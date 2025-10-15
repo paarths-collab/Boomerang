@@ -12,9 +12,8 @@ api_keys:
   alpaca_key_id: "PKRHG45MO6V5N7THXQC0"
   alpaca_secret_key: "ZqYbjYlHFcotKxzyQ0b8rzx7ljhsadgxjpfu6fF9"
 
-  # LLM API Keys
-  groq: "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"
-  gemini: "AIzaSyCeVnHp4ox358bg989H4MXqQ8dO6VWSMw0"
+  # LLM API Key for OpenRouter
+  openrouter: "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"
 
 # ==================================
 #      THIRD-PARTY API CONFIGS
@@ -39,11 +38,5 @@ agent_settings:
   
   # Performance and Rate Limiting
   cache_ttl: 300
-  groq_rpm: 30
-  gemini_rpm: 15
-# settings:
-#   default_ticker: "AAPL"
-#   history_period: "1y"
-#   history_interval: "1d"
-#   finnhub_symbol_prefix_for_nse: "NSE:INFY"
+
   
